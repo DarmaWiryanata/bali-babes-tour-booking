@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GENERATE_SOURCEMAP: false
     name: Build and Push
     steps:
       - name: git-checkout
@@ -21,4 +23,3 @@ jobs:
 
       - name: Remove node_modules
         run: rm -rf node_modules
-
