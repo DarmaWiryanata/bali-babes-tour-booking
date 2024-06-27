@@ -2,7 +2,7 @@
 import { TbHome } from "react-icons/tb"
 
 // Third-Party Libraries
-import { Outlet } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 export function Layout() {
   return (
@@ -11,7 +11,10 @@ export function Layout() {
         <section className="m-5 flex justify-between gap-3">
           <div className="text-3xl font-bold">Bali Babes</div>
 
-          <a href="#">
+          <Link
+            to="#"
+            className="inline-block overflow-hidden"
+          >
             <button
               className="btn btn-secondary btn-outline"
               title="Back To Homepage"
@@ -19,7 +22,7 @@ export function Layout() {
               <TbHome className="block md:hidden" />
               <span className="md:block hidden">Back To Homepage</span>
             </button>
-          </a>
+          </Link>
         </section>
 
         <Outlet />

@@ -1,14 +1,17 @@
 // React
 import { Fragment } from "react"
 
+// Third-Party Libraries
+import { Link } from "react-router-dom"
+
 export default function Home(): JSX.Element {
   return (
     <Fragment>
       <div className="text-2xl text-center font-bold my-3">Pick Your Trip</div>
 
       <section className="grid md:grid-cols-2">
-        <a
-          href="#"
+        <Link
+          to="#"
           className="inline-block overflow-hidden"
         >
           <div
@@ -21,10 +24,10 @@ export default function Home(): JSX.Element {
               </div>
             </section>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="#"
           className="inline-block overflow-hidden"
         >
           <div
@@ -37,7 +40,7 @@ export default function Home(): JSX.Element {
               </div>
             </section>
           </div>
-        </a>
+        </Link>
       </section>
     </Fragment>
   )
