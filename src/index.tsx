@@ -2,9 +2,6 @@
 import React from 'react'
 import reportWebVitals from './reportWebVitals'
 
-// Components
-import { Layout } from './components'
-
 // Route
 import { route } from './route'
 
@@ -25,7 +22,6 @@ root.render(
       router={createBrowserRouter([
         {
           path: "/",
-          element: <Layout />,
           children: route
         }
       ])}

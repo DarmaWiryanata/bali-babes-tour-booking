@@ -1,10 +1,13 @@
+// React
+import { PropsWithChildren } from "react"
+
 // Icons
 import { TbHome } from "react-icons/tb"
 
 // Third-Party Libraries
-import { Link, Outlet } from "react-router-dom"
+import { Link } from "react-router-dom"
 
-export function Layout() {
+export function Layout(params: PropsWithChildren<{}>): JSX.Element {
   return (
     <section className="min-h-dvh m-3 flex flex-col justify-center">
       <div className="max-w-[1200px] w-full mx-auto rounded-3xl overflow-hidden shadow border">
@@ -25,7 +28,7 @@ export function Layout() {
           </Link>
         </section>
 
-        <Outlet />
+        {params.children}
       </div>
     </section>
   )
