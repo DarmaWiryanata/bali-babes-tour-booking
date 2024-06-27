@@ -2,6 +2,12 @@
 import React from 'react'
 import reportWebVitals from './reportWebVitals'
 
+// Components
+import { Layout } from './components'
+
+// Route
+import { route } from './route'
+
 // Style
 import './index.css'
 
@@ -9,16 +15,21 @@ import './index.css'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-// Route
-import { route } from './route'
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={createBrowserRouter(route)} />
+    <RouterProvider
+      router={createBrowserRouter([
+        {
+          path: "/",
+          element: <Layout />,
+          children: route
+        }
+      ])}
+    />
   </React.StrictMode>
 )
 
