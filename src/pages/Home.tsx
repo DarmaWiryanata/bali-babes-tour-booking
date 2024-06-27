@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
 
       <section className="grid md:grid-cols-2">
         <Link
-          to="#"
+          to="/private-trip"
           className="inline-block overflow-hidden"
         >
           <div
