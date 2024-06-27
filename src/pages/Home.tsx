@@ -1,12 +1,12 @@
-// React
-import { Fragment } from "react"
+// Components
+import { Layout } from "@/components"
 
 // Third-Party Libraries
 import { Link } from "react-router-dom"
 
 export default function Home(): JSX.Element {
   return (
-    <Fragment>
+    <Layout>
       <div className="text-2xl text-center font-bold my-3">Pick Your Trip</div>
 
       <section className="grid md:grid-cols-2">
@@ -42,6 +42,6 @@ export default function Home(): JSX.Element {
           </div>
         </Link>
       </section>
-    </Fragment>
+    </Layout>
   )
 }
