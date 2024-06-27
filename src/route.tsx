@@ -1,4 +1,5 @@
 // Pages
+import GroupTrip from "@/pages/GroupTrip"
 import Home from "@/pages/Home"
 
 // Types
@@ -8,5 +9,9 @@ export const route: RouteObject[] = [
   {
     path: "/",
     element: <Home />
+  },
+  {
+    path: "/group-trip",
+    element: <GroupTrip />
   }
 ]

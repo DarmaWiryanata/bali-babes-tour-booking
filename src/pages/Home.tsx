@@ -27,7 +27,7 @@ export default function Home(): JSX.Element {
         </Link>
 
         <Link
-          to="#"
+          to="/group-trip"
           className="inline-block overflow-hidden"
         >
           <div

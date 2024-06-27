@@ -1,0 +1,1 @@
+export const step_list: string[] = ["Pick Your Activity", "Review Order"]
