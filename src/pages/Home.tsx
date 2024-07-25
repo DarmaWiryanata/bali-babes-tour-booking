@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 
 export default function Home(): JSX.Element {
   return (
+    // test
     <Layout>
       <div className="text-2xl text-center font-bold my-3">Pick Your Trip</div>
 
